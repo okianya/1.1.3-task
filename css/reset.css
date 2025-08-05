@@ -30,9 +30,6 @@ a:focus,
 a:active {
 	outline: none;
 }
-a:visited{
-	-webkit-color: inherit;
-}
 nav,
 footer,
 header,

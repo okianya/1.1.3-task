@@ -1,4 +1,4 @@
-body{
+.menu__burger{
 	font-family: "TT Lakes", sans-serif;
 	color: #1B1C21;
 	font-weight: 500;
@@ -6,10 +6,19 @@ body{
 	height: 100%;
 	box-shadow: 15px 0 50px 0 #0E185033;
 	position: fixed;
+	overflow-y: auto;
+	background-color: #FFFFFF;
 }
 
-main{
-	background-color: #FFFFFF;
+/* Скрываем scrollbar для Chrome, Safari и Opera */
+.menu__burger::-webkit-scrollbar {
+  display: none;
+}
+ 
+/* Скрываем scrollbar для IE, Edge и Firefox */
+.menu__burger {
+  -ms-overflow-style: none;  /* IE и Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
 button{
@@ -96,6 +105,7 @@ footer{
 .language__list{
 	display: flex;
 	gap: 10px;
+	padding-bottom: 10px;
 }
 
 .language__link--active{
