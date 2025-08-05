@@ -3,8 +3,9 @@ body{
 	color: #1B1C21;
 	font-weight: 500;
 	width: 320px;
-	height: 1024px;
+	height: 1024vh;
 	box-shadow: 15px 0 50px 0 #0E185033;
+	position: fixed;
 }
 
 main{
@@ -17,7 +18,9 @@ button{
 
 /* Верхнее меню */
 header{
-	padding: 20px;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 .upper-menu{
@@ -43,7 +46,7 @@ header{
 	flex-direction: column;
 	padding-left: 20px;
 	gap: 30px;
-	margin-bottom: 270px;
+	margin-bottom: 40px;
 }
 
 a {
@@ -86,6 +89,7 @@ footer{
 
 .contacts__number{
 	font-weight: 700;
+	font-size: 24px;
 }
 
 .language__list{
@@ -93,12 +97,13 @@ footer{
 	gap: 10px;
 }
 
-.language__list--active{
+.language__link--active{
 	color: #7E7E82;
 }
 
 /* Ховеры */
-.logo:hover, .icon:hover, .contacts__action:hover {
+/* !!!!!! для почты и телефона сделать так чтобы окрывалась почта и телефон */
+.logo:hover, .icon:hover, .contacts__email:hover, .contacts__number:hover {
 	transform: scale(1.1);
 	transition: 0.2s;
 }
@@ -115,4 +120,8 @@ footer{
 	height: 32px;
 	background-color: #41F6D7;
 	border-radius: 0px 10px 10px 0px;
+}
+
+.language__link:hover{
+	color: #7E7E82;
 }
